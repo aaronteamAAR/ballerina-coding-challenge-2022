@@ -1,0 +1,1 @@
+{"totalTests":3,"passed":3,"failed":0,"skipped":0,"tests":[{"name":"testPickUpNegotiationFailure","status":"PASSED"},{"name":"testPickUpNegotiationSuccess","status":"PASSED"},{"name":"testPickUpNegotiationSuccessMovingToV","status":"PASSED"}]}

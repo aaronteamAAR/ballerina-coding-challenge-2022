@@ -1,0 +1,23 @@
+2022-09-22 12:25:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT EMPLOYEE.NAME, EMPLOYEE.DEPARTMENT, AMOUNT, REASON FROM PAYMENT WHERE AMOUNT >  ?  INNER[*] JOIN EMPLOYEE ON PAYMENT.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID"; SQL statement:
+SELECT Employee.name, Employee.department, amount, reason FROM Payment WHERE amount >  ?  INNER JOIN Employee ON Payment.employee_id = Employee.employee_id [42000-206]
+2022-09-22 12:27:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT EMPLOYEE.NAME, EMPLOYEE.DEPARTMENT, PAYMENT.AMOUNT, PAYMENT.REASON FROM PAYMENT WHERE AMOUNT >  ?  INNER[*] JOIN EMPLOYEE ON PAYMENT.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID"; SQL statement:
+SELECT Employee.name, Employee.department, Payment.amount, Payment.reason FROM Payment WHERE amount >  ?  INNER JOIN Employee ON Payment.employee_id = Employee.employee_id [42000-206]
+2022-09-22 12:30:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT EMPLOYEE.NAME, EMPLOYEE.DEPARTMENT, PAYMENT.AMOUNT, PAYMENT.REASON FROM PAYMENT WHERE AMOUNT >  ?  INNER[*] JOIN EMPLOYEE ON PAYMENT.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID"; SQL statement:
+SELECT Employee.name, Employee.department, Payment.amount, Payment.reason FROM Payment WHERE amount >  ?  INNER JOIN Employee ON Payment.employee_id = Employee.employee_id [42000-206]
+2022-09-22 12:31:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a        SELECT EMPLOYEE.NAME, EMPLOYEE.DEPARTMENT, PAYMENT.AMOUNT, PAYMENT.REASON\000a        FROM PAYMENT\000a        WHERE AMOUNT >  ? \000a        INNER[*] JOIN EMPLOYEE ON PAYMENT.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID;"; SQL statement:
+
+        SELECT Employee.name, Employee.department, Payment.amount, Payment.reason
+        FROM Payment
+        WHERE amount >  ? 
+        INNER JOIN Employee ON Payment.employee_id = Employee.employee_id; [42000-206]
+2022-09-22 12:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a        SELECT EMPLOYEE.NAME, EMPLOYEE.DEPARTMENT, PAYMENT.AMOUNT, PAYMENT.REASON\000a        FROM PAYMENT\000a        WHERE PAYMENT.AMOUNT >  ? \000a        INNER[*] JOIN EMPLOYEE ON PAYMENT.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID;"; SQL statement:
+
+        SELECT Employee.name, Employee.department, Payment.amount, Payment.reason
+        FROM Payment
+        WHERE Payment.amount >  ? 
+        INNER JOIN Employee ON Payment.employee_id = Employee.employee_id; [42000-206]
